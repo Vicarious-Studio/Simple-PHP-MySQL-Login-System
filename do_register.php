@@ -23,7 +23,7 @@ if(!ctype_alnum($_POST['username']) || !ctype_alnum($_POST['password'])) {
 
 // Ok, the information supplied is good. Let's insert it into the database.
 $USERNAME = $_POST['username'];
-$PASSWORD = $_POST['password'];
+$PASSWORD = md5(strrev(md5($_POST['password'])));
 
 require("config.php");
 $con = mysqli_connect($DBSERVER, $DBUSER, $DBPASS, $DBNAME);
