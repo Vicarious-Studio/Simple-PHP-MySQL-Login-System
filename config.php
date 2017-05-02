@@ -1,0 +1,15 @@
+<?PHP
+///////////////////////////////////////////////////////////////////////////
+// The configuration file for the script
+//
+// https://github.com/Vicarious-Studio/Simple-PHP-MySQL-Login-System.git
+//
+///////////////////////////////////////////////////////////////////////////
+
+$DBSERVER = "localhost";
+$DBTABLE = "";
+$DBNAME = "";
+$DBUSER = "";
+$DBPASS = "";
+
+?>
